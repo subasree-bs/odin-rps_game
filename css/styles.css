@@ -1,0 +1,75 @@
+*{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+body{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/081/992/non_2x/abstract-tech-sci-fi-hologram-frame-template-design-background-vector.jpg");
+    background-repeat: no-repeat; 
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    
+    
+}
+.imgbox {
+    /* display: grid;
+    height: 100%; */
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    /* margin: auto; */
+}
+h1{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+h2.machine{
+    text-align: left;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+h2.you{
+    text-align: right;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+
+}
+.button {
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #3f423f;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 7px #999;
+    margin:3px;
+  }
+  
+  .button:hover {background-color: #4492a5;}
+  
+  .button:active {
+    background-color: #1589a7e3;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .button .fas{
+    color: rgb(216, 186, 16);
+  }
+  /* .you_choice{
+    visibility: hidden;
+ }
+ .machine_choice{
+    visibility: hidden;
+ } */
+ 
