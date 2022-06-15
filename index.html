@@ -11,60 +11,76 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@500&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
 <body>
-
-    <div class="container-fluid" style="margin:0;padding:0;">
-        <h1 style="color: rgb(69, 210, 235); text-align: center;">BATTLE ARENA</h1>
+    <div class="container-fluid" style="margin:0;padding:0;width:100%;">
+        <h1 style="color: rgb(73, 222, 248); text-align: center;font-family: 'Audiowide', cursive;">BATTLE ARENA</h1>
         <br><br>
         <div class="row">
             <div class="col-md-5"></div>
             <div class="col-md-2">
-                <h4 style="color:bisque;text-align: center;">MOVES : <span style="color:brown;">0</span> </h4>
+                <h4 style="color:bisque;text-align: center;">MOVES : <span id="moves_count" style="color:rgb(241, 151, 78);font-family: 'Audiowide', cursive;">5</span> </h4>
             </div>
             <div class="col-md-5"></div>
         </div>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
                 <h2 class="you">YOU</h2>
             </div>
-            <div class="col-md-4">            
+            <div class="col-md-2">
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h2 class="machine">MACHINE</h2>
             </div>
         </div>
-        <br><br>
+        <br>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-3">
+                <h2 class="you_score">0</h2>
+            </div>
+            <div class="col-md-2">
+            </div>
+            <div class="col-md-3">
+                <h2 class="machine_score">0</h2>
+            </div>
+        </div>
+        <br>
         <div class="row you_machine_btns">
             <div class="col-md-2"></div>
             <div class="col-md-3" style="text-align: center;">
-                <button class="button" id="you_r"><i class="fas fa-hand-rock"></i></button>
-                <button class="button" id="you_p"><i class="fas fa-hand-paper"></i></button>
-                <button class="button" id="you_s"><i class="fas fa-hand-scissors"></i></button>
+                <button class="button" id="you_r" onclick="myFunction(this.value)" value="Rock"><i class="fas fa-hand-rock"></i></button>
+                <button class="button" id="you_p" onclick="myFunction(this.value)" value="Paper"><i class="fas fa-hand-paper"></i></button>
+                <button class="button" id="you_s" onclick="myFunction(this.value)" value="Scissors"><i class="fas fa-hand-scissors"></i></button>
             </div>
-        
             <div class="col-md-2"></div>
             <div class="col-md-3" style="text-align: center;">
-                <button class="button" id="machine_r"><i class="fas fa-hand-rock"></i></button>
-                <button class="button" id="machine_p"><i class="fas fa-hand-paper"></i></button>
-                <button class="button" id="machine_s"><i class="fas fa-hand-scissors"></i></button>
+                <button disabled class="button" id="machine_r"><i class="fas fa-hand-rock"></i></button>
+                <button disabled class="button" id="machine_p"><i class="fas fa-hand-paper"></i></button>
+                <button disabled class="button" id="machine_s"><i class="fas fa-hand-scissors"></i></button>
             </div>
         </div>
         <br><br>
         <div class="row you_machine_choice">
             <div class="col-md-2"></div>
             <div class="col-md-3 you_choice">
-                <h3 id="you_choice" style="text-align:center;color: red;"> hi</h3>
+                <h3 id="you_choice" style="text-align:center;color: red;"> </h3>
             </div>
             <div class="col-md-2">
                 <h2 style="text-align:center;color: blanchedalmond;">VS</h2>
             </div>
             <div class="col-md-3 machine_choice">
-                <h3 id="machine_choice" style="text-align:center;color: yellow">hello </h3>
+                <h3 id="machine_choice" style="text-align:center;color: yellow"> </h3>
             </div>
         </div>
-
+        <br>
+        <div class="row">
+            <h2 id="moves_result" style="text-align: center;color: aliceblue;">
+                <!-- Rock BEATS Scissors -->
+            </h2>
+        </div>
     </div>
 </body>
 </html>
