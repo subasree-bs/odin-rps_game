@@ -14,29 +14,42 @@
     <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@500&display=swap" rel="stylesheet"></head>
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
 <body>
-    <div class="container-fluid" style="margin:0;padding:0;width:100%;">
+    <div class="container-fluid " style="margin:0;padding:0;width:100%;">
         <h1 style="color: rgb(73, 222, 248); text-align: center;font-family: 'Audiowide', cursive;">BATTLE ARENA</h1>
         <br><br>
+    <div class="content" id="content">
         <div class="row">
             <div class="col-md-5"></div>
             <div class="col-md-2">
-                <h4 style="color:bisque;text-align: center;">MOVES : <span id="moves_count" style="color:rgb(241, 151, 78);font-family: 'Audiowide', cursive;">5</span> </h4>
+                <h4 style="color:bisque;text-align: center;">MOVES : <span id="moves_count">5</span> </h4>
             </div>
             <div class="col-md-5"></div>
         </div>
+
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="text-align: center;">
                 <h2 class="you">YOU</h2>
+                <h2 class="you_score" id="you_score">0</h2>
+                <br>
+                <button class="button" id="you_r" onclick="myFunction(this.value)" value="Rock"><i class="fas fa-hand-rock"></i></button>
+                <button class="button" id="you_p" onclick="myFunction(this.value)" value="Paper"><i class="fas fa-hand-paper"></i></button>
+                <button class="button" id="you_s" onclick="myFunction(this.value)" value="Scissors"><i class="fas fa-hand-scissors"></i></button>
             </div>
             <div class="col-md-2">
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3" style="text-align: center;">
+                <!-- <br> -->
                 <h2 class="machine">MACHINE</h2>
+                <h2 class="machine_score" id="machine_score">0</h2>
+                <br>
+                <button disabled class="button" id="machine_r"><i class="fas fa-hand-rock"></i></button>
+                <button disabled class="button" id="machine_p"><i class="fas fa-hand-paper"></i></button>
+                <button disabled class="button" id="machine_s"><i class="fas fa-hand-scissors"></i></button>
             </div>
         </div>
         <br>
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-3">
                 <h2 class="you_score">0</h2>
@@ -46,9 +59,9 @@
             <div class="col-md-3">
                 <h2 class="machine_score">0</h2>
             </div>
-        </div>
+        </div> -->
         <br>
-        <div class="row you_machine_btns">
+        <!-- <div class="row you_machine_btns">
             <div class="col-md-2"></div>
             <div class="col-md-3" style="text-align: center;">
                 <button class="button" id="you_r" onclick="myFunction(this.value)" value="Rock"><i class="fas fa-hand-rock"></i></button>
@@ -61,18 +74,18 @@
                 <button disabled class="button" id="machine_p"><i class="fas fa-hand-paper"></i></button>
                 <button disabled class="button" id="machine_s"><i class="fas fa-hand-scissors"></i></button>
             </div>
-        </div>
-        <br><br>
+        </div> -->
+        <br>
         <div class="row you_machine_choice">
             <div class="col-md-2"></div>
             <div class="col-md-3 you_choice">
-                <h3 id="you_choice" style="text-align:center;color: red;"> </h3>
+                <h3 id="you_choice" style="text-align:center;color: yellow;"> </h3>
             </div>
             <div class="col-md-2">
                 <h2 style="text-align:center;color: blanchedalmond;">VS</h2>
             </div>
             <div class="col-md-3 machine_choice">
-                <h3 id="machine_choice" style="text-align:center;color: yellow"> </h3>
+                <h3 id="machine_choice" style="text-align:center;color: rgb(235, 76, 235)"> </h3>
             </div>
         </div>
         <br>
@@ -80,6 +93,18 @@
             <h2 id="moves_result" style="text-align: center;color: aliceblue;">
                 <!-- Rock BEATS Scissors -->
             </h2>
+        </div>
+    </div>
+        <div class="final" id="final">
+            <div class="row final_content">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <h3 id="no_moves">NO MOVES LEFT</h3>
+                <h2 id="final_result"></h2>
+                <button class="button1" onclick="window.location.reload();">Play Again</button>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
         </div>
     </div>
 </body>
