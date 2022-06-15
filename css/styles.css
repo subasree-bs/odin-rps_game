@@ -1,15 +1,13 @@
 *{
     font-family: 'Kdam Thmor Pro', sans-serif;
-
 }
 body{
     background-image: url("https://static.vecteezy.com/system/resources/previews/002/081/992/non_2x/abstract-tech-sci-fi-hologram-frame-template-design-background-vector.jpg");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
     background-size: 100% 100%;
-    
-    
+    background-color: aqua;
 }
 .imgbox {
     /* display: grid;
@@ -29,16 +27,24 @@ h1{
     font-family: 'Kdam Thmor Pro', sans-serif;
 }
 h2.machine{
-    text-align: left;
+    text-align: center;
     color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
 }
 h2.you{
-    text-align: right;
+    text-align: center;
     color: white;
-    font-family: 'Kdam Thmor Pro', sans-serif;
-
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+}
+h2.machine_score{
+    text-align: center;
+    color: rgb(255, 1, 1);
+    font-family: 'Orbitron', sans-serif !important;
+}
+h2.you_score{
+    text-align: center;
+    color: rgb(65, 253, 8);
+    font-family: 'Orbitron', sans-serif !important;
 }
 .button {
     display: inline-block;
@@ -49,15 +55,13 @@ h2.you{
     text-decoration: none;
     outline: none;
     color: #fff;
-    background-color: #3f423f;
+    background-color: #3F423F;
     border: none;
     border-radius: 15px;
     box-shadow: 0 7px #999;
     margin:3px;
   }
-  
-  .button:hover {background-color: #4492a5;}
-  
+  .button:hover {background-color: #4492A5;}
   .button:active {
     background-color: #1589a7e3;
     box-shadow: 0 5px #666;
@@ -66,6 +70,13 @@ h2.you{
   .button .fas{
     color: rgb(216, 186, 16);
   }
+  button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #CCCCCC;
+  color: #666666;
+  cursor: default;
+}
   /* .you_choice{
     visibility: hidden;
  }
